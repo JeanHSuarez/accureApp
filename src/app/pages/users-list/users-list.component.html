@@ -1,0 +1,7 @@
+<h1>List of Users</h1>
+
+<p *ngFor="let u of users">
+  Username: <b>{{ u.username}}</b> <br>
+  Email: {{ u.email }} |
+  Organization: {{ u.organization.name }}
+</p>

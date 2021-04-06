@@ -1,0 +1,12 @@
+<h1>Time Logs</h1>
+
+<p *ngFor="let t of timelogs">
+  Sign In: {{ t.signIn}} <br>
+  Sign Out: {{ t.signOut }} <br>
+  Member Name: <b>{{ t.user.username }} </b>
+  Organization: {{ t.user.organization.name }} <br>
+  Duration: {{ t.durationInMins }} Minutes <br>
+  Billing Units Incurred: {{ t.billingUnits }} <br>
+  Billable Amount: {{ t.billableAmount }}
+</p>
+
